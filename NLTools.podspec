@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NLTools'
   s.version          = '0.0.0.1'
-  s.summary          = 'A short description of NLTools.'
+  s.summary          = '简单的NLTools'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,11 +17,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 简单尝试的YYKit替代品、 制作中
+  s.description      = <<-DESC
+                          简单尝试的YYKit替代品、 制作中
+                       DESC
 
   s.homepage         = 'https://github.com/NealWills/NLTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', 
+                         :file => 'LICENSE', 
+                         :text => <<-LICENSE
+                                    NealWills 
+                                  LICENSE
+                        }
   s.author           = { 'NealWills' => 'nealwills93@gmail.com' }
   s.source           = { :git => 'https://github.com/NealWills/NLTools.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
